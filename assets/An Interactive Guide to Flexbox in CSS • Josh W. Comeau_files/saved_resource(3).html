@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Josh Comeau iFrame playground</title>
+
+      <!-- global styles -->
+      <style>
+        @font-face {
+          font-family: 'Wotfard';
+          src: url('/fonts/wotfard/wotfard-semibold-webfont.woff2')
+            format('woff2');
+          font-weight: 600;
+          font-style: normal;
+          font-display: fallback;
+        }
+        @font-face {
+          font-family: 'Wotfard';
+          src: url('/fonts/wotfard/wotfard-medium-webfont.woff2')
+            format('woff2');
+          font-weight: 500;
+          font-style: normal;
+          font-display: fallback;
+        }
+        @font-face {
+          font-family: 'Wotfard';
+          src: url('/fonts/wotfard/wotfard-regular-webfont.woff2')
+            format('woff2');
+          font-weight: 400;
+          font-style: normal;
+          font-display: fallback;
+        }
+
+        body {
+          margin: 0;
+          padding: 8px;
+        }
+
+        p, h1, h2, h3, h4, h5, h6 {
+          margin: 0;
+          padding: 0;
+        }
+
+        *,
+        *:before,
+        *:after {
+          box-sizing: border-box;
+          line-height: 1.5;
+          line-height: calc(1em + 0.5rem);
+          -webkit-font-smoothing: antialiased;
+          font-family: Wotfard;
+        }
+      </style>
+
+      <style>/* Cosmetic styles */
+form {
+  padding: 8px;
+  border: 1px solid hsl(0deg 0% 50%);
+}
+
+label {
+  font-weight: 500;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 4px;
+}
+button {
+  height: 2.5rem;
+}</style>
+    </head>
+    <body>
+      <style>
+  form {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .name {
+    flex-grow: 1;
+    flex-basis: 120px;
+  }
+  .email {
+    flex-grow: 3;
+    flex-basis: 170px;
+  }
+  button {
+    flex-grow: 1;
+    flex-basis: 70px;
+  }
+</style>
+
+<form>
+  <label class="name" for="name-field">
+    Name:
+    <input id="name-field">
+  </label>
+  <label class="email" for="email-field">
+    Email:
+    <input id="email-field" type="email">
+  </label>
+  <button>
+    Submit
+  </button>
+</form>
+      <span></span>
+      <script>
+        window.onload = function() {
+          if(typeof window !== 'undefined') {
+            window.parent.postMessage({
+              source: "frame-argyle-demo",
+              message: {
+                type: "loaded"
+              },
+            }, "*");
+
+            /*
+             * Disable all link-clicks, since
+             * they're meant for show.
+             */
+
+            const allLinks = [...document.querySelectorAll('a')];
+            allLinks.forEach(a => {
+              a.addEventListener('click', ev => {
+                ev.preventDefault();
+              });
+            });
+          }
+        }
+        window.onerror = function(message) {
+          if(typeof window !== 'undefined') {
+            window.parent.postMessage({
+              source: "frame-argyle-demo",
+              message: {
+                type: "error",
+                data: message
+              },
+            }, "*");
+          }
+        }
+      </script>
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      
+      <script>
+        
+      </script>
+    
+    
+    
+  </body></html>
