@@ -546,13 +546,13 @@ span {
 
 /* Break points */
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   html {
     font-size: 55%;
   }
 }
 
-@media (min-width: 991px) {
+@media (max-width: 991px) {
 
   .home {
     display: grid;
