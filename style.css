@@ -546,17 +546,13 @@ span {
 
 /* Break points */
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   html {
     font-size: 55%;
   }
 }
 
-@media (max-width: 991px) {
-  section {
-    padding: 10rem 3% 2rem;
-    display: grid;
-  }
+@media (min-width: 991px) {
 
   .home {
     display: grid;
@@ -565,6 +561,7 @@ span {
     align-items: center;
     justify-content: center;
     padding-top: 15rem;
+    padding: 20rem 10rem;
   }
   .home p {
     text-align: left;
@@ -696,7 +693,10 @@ span {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  section{
+    padding: 20rem 10rem;
+  }
   .hamburger {
     display: flex;
   }
@@ -765,17 +765,25 @@ span {
 
 @media (max-width: 991px) {
   section {
-    padding: 10rem 3% 2rem;
+    padding: 10rem 2rem;
     display: grid;
+  }
+
+  .home-content{
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 8rem;
+    padding-top: 7rem;
   }
 
   .home {
     display: grid;
     grid-template-columns: repeat(1 1fr);
-    gap: 2rem;
-    align-items: center;
     justify-content: center;
-    padding-top: 15rem;
+    align-items: center;
+    padding: 2rem 8rem;
   }
   .home p {
     text-align: left;
@@ -793,7 +801,8 @@ span {
 
   .home-img img {
     width: 50rem;
-    border-radius: 16rem;
+    border-radius: 5rem;
+    padding: 2rem 6rem;
   }
 
   .home-img {
@@ -819,13 +828,13 @@ span {
 
   .social-media {
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-btn {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
   }
 
@@ -835,11 +844,13 @@ span {
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    padding-top: 10rem;
-    padding-right: 10rem;
-    padding-left: 10rem;
   }
   .about-content {
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 8rem;
     text-align: center;
   }
 
@@ -861,17 +872,24 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem 6rem;
   }
 
   .project-box {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
   .project-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    overflow: hidden;
   }
 
   .project-container .project-box {
@@ -880,6 +898,8 @@ span {
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
+    border: 0.2rem solid var(--second-bg-color);
+    transition: 0.5s ease;
   }
 
   .project-box img {
