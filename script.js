@@ -71,7 +71,7 @@ window.addEventListener("load", () => {
 
 // auto typing
 const typingText = document.getElementById("typing-text");
-const words = ["Frontend Developer.", "Web Designer.", "Writer."];
+const words = ["Frontend Developer.", "Web Designer.", "Writer.","AI Developer.", "Youtuber.", "Tik Toker."];
 // typingText.style.width = `${typingText.textContent.length}ch`;
 let wordIndex = 0;
 let charIndex = 0;
@@ -108,7 +108,7 @@ function typeEffect() {
 typeEffect();
 
 const nameElement = document.getElementById('name-change');
-const names = ['Chlazie De-solo', 'Solace'];
+const names = ['Solace', 'Chlazie De-solo'];
 let index = 0;
 
 function changeName() {
