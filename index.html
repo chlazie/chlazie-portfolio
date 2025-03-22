@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body> 
     <!-- header starts here -->
     <header class="header">
       <nav class="navbar">
@@ -21,21 +21,22 @@
           <span class="line-2"></span>
         </div>
         <ul class="nav-links" id="nav-links" onclick="closeMenu()">
-          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#home" class="active">Home <title>home</title></a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <div>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <i class="bx bxs-moon"></i>
+              <i class="bx bxs-sun"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
         </ul>
       </nav>
-      <div>
-        <input type="checkbox" class="checkbox" id="checkbox">
-        <label for="checkbox" class="checkbox-label">
-          <i class="bx bxs-moon"></i>
-          <i class="bx bxs-sun"></i>
-          <span class="ball"></span>
-        </label>
-      </div>
+
     </header>
     <!-- header starts here -->
 
@@ -44,8 +45,8 @@
     <section class="home" id="home">
       <div class="home-content">
         <h3>Hello, It's Me</h3>
-        <h1>Chlazie De-solo</h1>
-        <h3>And I Am A <span>Frontend Developer</span></h3>
+        <h1 id="name-change">Chlazie De-solo</h1>
+        <h3>And I Am A <span id="typing-text">Frontend Developer</span></h3>
         <p>
           passionate about making responsive and functional websites. Look
           through my portfolio where you'll eventually find real passion and
@@ -58,6 +59,7 @@
           <a href=""><i class="bx bxl-twitter"></i></a>
           <a href=""><i class="bx bxl-instagram"></i></a>
           <a href=""><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.webnovel.com/book/zyre's-awakening_32220826708645205"><i class="bx bx-book"></i></a>
         </div>
         <div class="home-btn">
           <a href=" #" class="btn1">Download CV</a>
