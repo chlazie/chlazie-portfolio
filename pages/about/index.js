@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 // icons
 import {
   FaHtml5,
@@ -6,23 +8,25 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaNodeJs,
+  FaPhp,
+  FaPython,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
   SiFramer,
-  SiAdobexd,
+  SiCanva,
   SiAdobephotoshop,
 } from "react-icons/si";
-
 
 //  data
 const aboutData = [
   {
-    title: 'skills',
+    title: "skills",
     info: [
       {
-        title: 'Web Development',
+        title: "Web Development",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
@@ -31,65 +35,78 @@ const aboutData = [
           <SiNextdotjs />,
           <SiFramer />,
           <FaWordpress />,
+          <FaNodeJs />,
+          <FaPhp />,
+          <FaPython />,
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: "UI/UX Design",
+        icons: [<FaFigma />, <SiCanva />, <SiAdobephotoshop />],
       },
     ],
   },
   {
-    title: 'awards',
+    title: "awards",
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: "Webby Awards - Honoree",
+        stage: "2024 - 2025",
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: "Adobe Design Achievement Awards - Finalist",
+        stage: "2024 - 2025",
       },
     ],
   },
   {
-    title: 'experience',
+    title: "experience",
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: "Trainee - Gallant Designs",
+        stage: "2023 - 2024",
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: "Web Developer - Innovation Growth Hub",
+        stage: "2025 - Till Date",
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: "Intern - Amazon",
+        stage: "2024 - 2025",
       },
     ],
   },
   {
-    title: 'credentials',
+    title: "credentials",
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: "Web Development - Innovation Growth Hub",
+        stage: "2021",
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: "Computer Science Diploma - Havard University",
+        stage: "2029",
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: "Certified Graphic Designer - Gallant Designs",
+        stage: "2023",
       },
     ],
   },
 ];
 
+// components
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
+
 const About = () => {
-  return <div>About</div>;
+  const [index, setIndex] = useState(0);
+
+  return (
+    <div>
+      <Circles />
+    </div>
+  );
 };
 
 export default About;
