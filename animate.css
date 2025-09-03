@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+
+body {
+  color: var(--text-color--);
+  background: var(--bg-color--);
+}
+
+:root {
+  --bg-color--: #000;
+  --second-bg-color--: #1a1a2e;
+  --main-color--: #0ff;
+  --text-color--: #fff;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50%;
+}
+.card-container h1 {
+  padding: 2rem 2rem;
+}
+.card {
+  margin: 0 auto;
+  padding: 2em;
+  width: 300px;
+  background: var(--second-bg-color--);
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after,
+.card::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 80%,
+    #ff7f00,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #7fff00,
+    #00ff00,
+    #00ffff,
+    #007fff,
+    #0000ff,
+    #7f00ff,
+    #ff00ff,
+    #ff007f,
+    #ff0000
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 5%;
+  animation: 3s spin linear infinite;
+}
+
+.card::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}

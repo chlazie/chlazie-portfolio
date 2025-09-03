@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHLAZIE'S PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body> 
+    <!-- header starts here -->
+    <header class="header">
+      <nav class="navbar">
+        <h1 class="logo">Portfolio</h1>
+        <div class="hamburger" id="hamburger" onclick="openMenu()">
+          <span></span>
+          <span class="line"></span>
+          <span class="line-2"></span>
+        </div>
+        <ul class="nav-links" id="nav-links" onclick="closeMenu()">
+          <li><a href="#home" class="active">Home <title>home</title></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <i class="bx bxs-moon"></i>
+              <i class="bx bxs-sun"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
+        </ul>
+      </nav>
+
+    </header>
+    <!-- header starts here -->
+
+    <!-- Home design starts here -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1 id="name-change">Chlazie De-solo</h1>
+        <h3>And I Am A <span id="typing-text">Frontend Developer</span></h3>
+        <p>
+          passionate about making responsive and functional websites. Look
+          through my portfolio where you'll eventually find real passion and
+          definitely we can work together with the right fees of course. And do
+          well to follow my social-media accounts for a more favourable
+          experience. ⬇
+        </p>
+        <div class="social-media">
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram"></i></a>
+          <a href=""><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.webnovel.com/book/zyre's-awakening_32220826708645205"><i class="bx bx-book"></i></a>
+        </div>
+        <div class="home-btn">
+          <a href=" #" class="btn1">Download CV</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="assets/home.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Home design ends here -->
+
+    <!-- About section starts -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="assets/about.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer!</h3>
+        <p>
+          I am a Frontend Web Developer passionate about making user freindly
+          and functional websites I am a web3 enthusiasts equipped with
+          reasonable HTML, CSS, and JavaScript. I also have a two year
+          experience as a Developer
+        </p>
+
+        <a href="#" class="btn">Read More </a>
+      </div>
+    </section>
+    <!-- About section ends -->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <img class="bx bxs-code-alt" src="assets/pic-1.png" />
+          <h3>Fullstack Web Development</h3>
+          <p>
+            we give good responsive and functional websites with HTML, CSS,
+            JavaScript, React etc to create cool user interface, 
+            integrate API's and databases for full functionality of your website.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <img class="bx bxs-paint" src="assets/pic-2.png" />
+          <h3>Web Design</h3>
+          <p>
+            we also offer good UI/UX designs to facilitate a good user
+            experience producing a good prototype for a good website. do well to
+            look up some of my projects in the next section with amazing UI
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <img class="bx bxs-machine" src="assets/pic-3.png" />
+          <h3>AI Development</h3>
+          <p>
+            We integrate Machine learning into your already amazing website
+            there by creating a sophisticted user experience while keeping your
+            website easy to use.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+    <!-- services section starts -->
+
+    <!-- Projects section starts -->
+    <section class="projects" id="projects">
+      <h2 class="heading">My Latest <span>Projects</span></h2>
+
+      <div class="project-container">
+        <div class="project-box">
+          <img src="assets/portfolio1.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Calculator project</h4>
+            <p>
+              Simple calculator project done with simple HTML, CSS, and
+              JavaScript
+            </p>
+            <a href="#">↗️</a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="assets/portfolio2.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>A background for one of my projects</p>
+            <a href="#">↗️</a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="assets/portfolio3.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>A simply made profile card with HTML and CSS only</p>
+            <a href="#">↗️</a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="assets/portfolio4.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Readers Hub</h4>
+            <p>My website about a book hub where writers and authours meet</p>
+            <a href="#">↗️</a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="assets/portfolio5.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Swift Assist</h4>
+            <p>A simple fitness website SwifTAssist</p>
+            <a href="#">↗️</a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="assets/portfolio6.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Worknook</h4>
+            <p>An abandoned project left for God knows when</p>
+            <a href="#">↗️</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects section starts -->
+
+    <!-- Contact section starts -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- Contact section ends -->
+
+    <!-- footer starts here -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 By Chlazie | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bxs-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <form action="#" method="get"></form>
+    <!-- footer ends here -->
+
+    <!-- SCROLL REVEAL -->
+
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
